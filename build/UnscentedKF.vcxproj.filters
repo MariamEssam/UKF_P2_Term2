@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\MyPC\Courses\Udacity-Self Driving\Term#2\Workspace\Project#2\UKF_P2_Term2\src\ukf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\MyPC\Courses\Udacity-Self Driving\Term#2\Workspace\Project#2\UKF_P2_Term2\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\MyPC\Courses\Udacity-Self Driving\Term#2\Workspace\Project#2\UKF_P2_Term2\src\tools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\MyPC\Courses\Udacity-Self Driving\Term#2\Workspace\Project#2\UKF_P2_Term2\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{CE2A51CF-6647-3E3F-B3D6-CB96A60D8D59}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
