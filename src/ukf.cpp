@@ -91,12 +91,7 @@ void UKF::ProcessMeasurement(MeasurementPackage meas_package) {
 			px = meas_package.raw_measurements_[0] * cos(meas_package.raw_measurements_[1]);
 			py = meas_package.raw_measurements_[0] * sin(meas_package.raw_measurements_[1]);
 			x_ << px, py, 0, 0, 0;
-			if(px<py&&px<1) 
-				P_ = MatrixXd::Identity(5, 5)* px;
-			else if (py < px&&py < 1)
-				P_ = MatrixXd::Identity(5, 5)* py;
-			else 
-				P_ = MatrixXd::Identity(5, 5);
+			P_ = MatrixXd::Identity(5, 5);
 
 			//P_ = MatrixXd::Identity(5, 5)* sqrt(px*px + py*py);
 			cout << P_ << endl;
@@ -110,13 +105,7 @@ void UKF::ProcessMeasurement(MeasurementPackage meas_package) {
 			px = meas_package.raw_measurements_[0];
 			py = meas_package.raw_measurements_[1];
 			x_ << px, py, 0, 0, 0;
-			//P_ = MatrixXd::Identity(5, 5)* sqrt(px*px + py*py);
-			if (px<py&&px<1)
-				P_ = MatrixXd::Identity(5, 5)* px;
-			else if (py < px&&py < 1)
-				P_ = MatrixXd::Identity(5, 5)* py;
-			else
-				P_ = MatrixXd::Identity(5, 5);
+			P_ = MatrixXd::Identity(5, 5);
 			cout << P_ << endl;
 		}
 		previous_timestamp_ = meas_package.timestamp_;
